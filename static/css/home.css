@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*,*::before,*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,8 +37,16 @@
 }
 
 .searchbox {
+    height: 40px;
+    width: 40px;
+    
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.searchbox button {
     height: 100%;
-    margin-left: 10px;
+    width: 100%;
+    background-color: #008354;
 }
