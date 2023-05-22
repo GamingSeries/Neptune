@@ -1,13 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/core/home.css' %}">
+{% endblock  %}
+
 {% block title %} Home Page{% endblock  %}
+
 
 {% block template%}
 
 <div class = "banner">
     <img src="{% static 'images/random_banner.jpg' %}" alt="banner">
+</div>
+<div>
     
 </div>
-
 {% endblock %}
