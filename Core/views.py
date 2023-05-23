@@ -7,3 +7,6 @@ def home(request):
 
 def cart(request):
     return render(request, "core/cart.html")
+
+def settings(request):
+    return render(request, "core/settings.html")
