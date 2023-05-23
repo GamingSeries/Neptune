@@ -5,16 +5,19 @@
 }
 
 .navbar {
+    padding: 0 10px;
     height: 60px;
     background-color: #262C38;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     gap: 20px;
 }
 
 .logo{
+    display: flex;
+    justify-content: left;
     height: 40px;
     width: 100px;
 }
@@ -72,16 +75,11 @@
 }
 
 .cart {
+    gap: 10px;
+    justify-self: start;
     height: 40px;
     width: 40px;
     border: none;
-}
-
-.cart button {
-    height: 100%;
-    width: 100%;
-    border: none;
-    background-color: transparent;
 }
 
 .cart svg {
