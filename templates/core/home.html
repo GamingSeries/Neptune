@@ -8,12 +8,29 @@
 {% block title %} Home Page{% endblock  %}
 
 
-{% block template%}
+{% block template %}
 
-<div class = "banner">
-    <img src="{% static 'images/random_banner.jpg' %}" alt="banner">
+<div class="banner">
+    <div class="slideshow-container">
+        <div class="slide1">
+            <img class="banner-img" src="{% static 'images/random_banner.jpg' %}" style="width:100%">
+        </div>
+        <!-- additional images here -->
+    </div>
 </div>
-<div>
-    
+
+<div class="categories">
+    <div class="men-cat">
+        <button class ="men-btn"> </button>
+        <h5 class="men-txt"><u>For Men</u></h5>
+    </div>
+    <div class="kids-cat">
+        <button class ="kids-btn"> </button>
+        <h5 class="kids-txt"><u>For Kids</u></h5>
+    </div>
+    <div class="women-cat">
+        <button class="women-btn"> </button>
+        <h5 class="women-txt"> For Women</h5>
+    </div>
 </div>
 {% endblock %}
