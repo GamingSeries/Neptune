@@ -27,7 +27,7 @@
             For Men
         </div>
         <div class="men-btn">
-            <a href="">
+            <a href="{%url 'for_men'%}">
                 <img src="{% static 'images/core/for_men.png' %}" alt="men_category" width="400px" height="400px">
             </a>
         </div>
@@ -37,7 +37,7 @@
             For Kids
         </div>
         <div class="kids-btn">
-            <a href="">
+            <a href="{% url 'for_kids' %}">
                 <img src="{% static 'images/core/for_kids.png' %}" alt="kids_category" width="400px" height="400px">
             </a>
         </div>
@@ -47,28 +47,11 @@
             For Women
         </div>
         <div class="women-btn">
-            <img src="{% static 'images/core/for_women.png' %}" alt="" width="400px" height="400px">
+            <a href="{%url 'for_women'%}">
+                <img src="{% static 'images/core/for_women.png' %}" alt="" width="400px" height="400px">
+            </a>
         </div>
     </div>
 </div>
 
-
-<!-- Categories 
-<div class="categories">
-    <div class="men-cat">
-        <a class="men-btn" href="">
-            <img src="{% static 'images/core/for_men.jpeg' %}" alt="">
-        </a>
-        <h5 class="men-txt"><u>For Men</u></h5>
-    </div>
-    <div class="kids-cat">
-        <button class ="kids-btn"> </button>
-        <h5 class="kids-txt"><u>For Kids</u></h5>
-    </div>
-    <div class="women-cat">
-        <button class="women-btn"> </button>
-        <h5 class="women-txt"><u>For Women</u></h5>
-    </div>
-</div>
--->
 {% endblock %}
