@@ -13,15 +13,52 @@
 <div class="banner">
     <div class="slideshow-container">
         <div class="slide1">
+            <a href="">
             <img class="banner-img" src="{% static 'images/core/random_banner.jpg' %}" style="width:100%">
+            </a>
         </div>
         <!-- additional images here -->
     </div>
 </div>
 
 <div class="categories">
+    <div class="men-category">
+        <div class="men-txt">
+            For Men
+        </div>
+        <div class="men-btn">
+            <a href="">
+                <img src="{% static 'images/core/for_men.png' %}" alt="men_category" width="400px" height="400px">
+            </a>
+        </div>
+    </div>
+    <div class="kids-category">
+        <div class="kids-txt">
+            For Kids
+        </div>
+        <div class="kids-btn">
+            <a href="">
+                <img src="{% static 'images/core/for_kids.png' %}" alt="kids_category" width="400px" height="400px">
+            </a>
+        </div>
+    </div>
+    <div class="women-category">
+        <div class="women-txt">
+            For Women
+        </div>
+        <div class="women-btn">
+            <img src="{% static 'images/core/for_women.png' %}" alt="" width="400px" height="400px">
+        </div>
+    </div>
+</div>
+
+
+<!-- Categories 
+<div class="categories">
     <div class="men-cat">
-        <button class ="men-btn"> <img src="{% static 'images/core/for_men.jpeg' %}" alt=""> </button>
+        <a class="men-btn" href="">
+            <img src="{% static 'images/core/for_men.jpeg' %}" alt="">
+        </a>
         <h5 class="men-txt"><u>For Men</u></h5>
     </div>
     <div class="kids-cat">
@@ -32,6 +69,6 @@
         <button class="women-btn"> </button>
         <h5 class="women-txt"><u>For Women</u></h5>
     </div>
-    
 </div>
+-->
 {% endblock %}
