@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.contrib.auth.hashers import make_password, check_password
 
 # Create your models here.
 
@@ -37,3 +38,23 @@ class MetaInfo(models.Model):
         verbose_name_plural = 'Meta Infos'
     def __str__(self):
         return self.page_name
+
+#-------------------------- Implementing Tables --------------------------#
+class UserLogin(models.Model):
+    email = models.EmailField(max_length=50, unique=True)
+    password = models.CharField(max_length=128)
+    
+
+    class Meta:
+        verbose_name = 'User Login'
+        verbose_name_plural = 'User Logins'
+
+    def __str__(self):
+        return self.email  # Changed from self.username 
+
+    def save(self, *args, **kwargs):
+        self.password = make_password(self.password)
+        super().save(*args, **kwargs)
+
+    def check_password(self, raw_password):
+        return check_password(raw_password, self.password)
