@@ -1,8 +1,8 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import UserProfile
-from .forms import UserProfileForm, LoginForm
-from django.contrib.auth import login as auth_login
+# from .forms import UserProfileForm, LoginForm
+# from django.contrib.auth import login as auth_login
 # Create your views here.
 
 def home(request):
