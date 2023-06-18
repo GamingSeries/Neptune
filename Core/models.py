@@ -40,21 +40,21 @@ class MetaInfo(models.Model):
         return self.page_name
 
 #-------------------------- Implementing Tables --------------------------#
-class UserLogin(models.Model):
-    email = models.EmailField(max_length=50, unique=True)
-    password = models.CharField(max_length=128)
+# class UserLogin(models.Model):
+#     email = models.EmailField(max_length=50, unique=True, blank=False)
+#     password = models.CharField(max_length=128, blank=False)
     
 
-    class Meta:
-        verbose_name = 'User Login'
-        verbose_name_plural = 'User Logins'
+#     class Meta:
+#         verbose_name = 'User Login'
+#         verbose_name_plural = 'User Logins'
 
-    def __str__(self):
-        return self.email  # Changed from self.username 
+#     def __str__(self):
+#         return self.email  # Changed from self.username 
 
-    def save(self, *args, **kwargs):
-        self.password = make_password(self.password)
-        super().save(*args, **kwargs)
+#     def save(self, *args, **kwargs):
+#         self.password = make_password(self.password)
+#         super().save(*args, **kwargs)
 
-    def check_password(self, raw_password):
-        return check_password(raw_password, self.password)
+#     def check_password(self, raw_password):
+#         return check_password(raw_password, self.password)
