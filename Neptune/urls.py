@@ -38,7 +38,7 @@ router.register(r'users', UserViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("__reload__/", include("django_browser_reload.urls")),
+    path("__reload__/", include('django_browser_reload.urls')),
 
     #rest framework urls
     path('', include(router.urls)),
@@ -46,6 +46,9 @@ urlpatterns = [
     #path(r'^auth/', include('djoser.urls')),
 
     #app urls
-    path("core/", include("Core.urls")),
+    path('core/', include('Core.urls')),
+
+    # #api urls
+    # path('', include('api.urls')),
 
 ]
