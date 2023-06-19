@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
-from .models import UserProfile
+#from .models import UserProfile
 # from .forms import UserProfileForm, LoginForm
 # from django.contrib.auth import login as auth_login
 # Create your views here.
@@ -18,16 +18,14 @@ def settings(request):
 def login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
-        form.request = request
         if form.is_valid():
-            print("Form is valid")
-            auth_login(request, form.user_cache)
-            print("User is authenticated")
-            return redirect('home')
+            user = authenticate(request, username=form.cleaned_data['username'], password=form.cleaned_data['password'])
+            if user is not None:
+                login(request, user)
+                return redirect('home')
     else:
         form = LoginForm()
-
-    return render(request, "core/login.html", {'form': form})
+    return render(request, 'login.html', {'form': form})
 
 #all the categories (men,women,kids) will be displayed here
 

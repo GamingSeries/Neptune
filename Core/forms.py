@@ -1,7 +1,5 @@
 from django import forms
-from .models import UserProfile
 
-class UserProfileForm(forms.ModelForm):
-    class Meta :
-        model = UserProfile
-        fields = '__all__'
+class LoginForm(forms.Form):
+    username = forms.CharField()
+    password = forms.CharField(widget=forms.PasswordInput)
