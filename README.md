@@ -12,7 +12,7 @@ _(More features will be added soon)_
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+## Prerequisites
 
 To run this project, you need to have Python installed on your machine. The project uses Django and Django REST framework. You can install them using `pip`:
 
@@ -20,6 +20,17 @@ To run this project, you need to have Python installed on your machine. The proj
 pip install django
 pip install djangorestframework
 ```
+
+You should also install virtualenv if you haven't installed it yet:
+```sh
+pip install virtualenv
+```
+after that you can create a virtual environment for the project:
+
+```sh
+python3 -m venv venv
+```
+
 ## Installation
 
 A step-by-step series of examples that tell you how to get a development environment running:
