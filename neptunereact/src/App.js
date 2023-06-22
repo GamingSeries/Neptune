@@ -1,12 +1,15 @@
 import React from 'react';
-import LoginForm from './LoginForm';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './Login';  // Ensure the path is correct based on your file structure
 
 function App() {
   return (
-    <div className="App">
-      <LoginForm />
-      {/* Other components */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        {/* Add more routes as necessary */}
+      </Routes>
+    </Router>
   );
 }
 

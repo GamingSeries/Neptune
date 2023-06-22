@@ -43,11 +43,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_filters',
+
+    #rest framework
     'rest_framework',
+    'rest_framework.authtoken',
     'djoser',
     'corsheaders',
 
+    #apps
     'Core'
 ]
 
@@ -156,5 +159,5 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # change to your React app's domain
+    "http://localhost:3000", 
 ]

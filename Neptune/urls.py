@@ -51,4 +51,8 @@ urlpatterns = [
     # #api urls
     # path('', include('api.urls')),
 
+    #djoser urls
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
+
 ]
