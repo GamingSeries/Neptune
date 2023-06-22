@@ -55,18 +55,27 @@ These instructions will get you a copy of the project up and running on your loc
 
 To run this project, you need to have Python installed on your machine. The project uses Django and Django REST framework. You can install them using `pip`:
 
-```sh
-pip install django
-pip install djangorestframework
-
 You should also install virtualenv if you haven't installed it yet:
+
+
 ```sh
 pip install virtualenv
 ```
 after that you can create a virtual environment for the project:
-
 ```sh
 python3 -m venv venv
+```
+
+To activate the virtual environment, run:
+
+```sh
+source venv/bin/activate
+```
+
+install django and djangorestframework:
+```sh
+pip install django
+pip install djangorestframework
 ```
 
 ## Installation
