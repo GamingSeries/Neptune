@@ -1,0 +1,48 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.login-form {
+    background-color: #262C38;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.submit {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.login-form button {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form > button {
+    color: aqua;
+}
+
+.form-input > input {
+    width: 300px;
+    height: 20px;
+}
+
+.field {
+    color: white;
+    padding: 5px;
+}
+
