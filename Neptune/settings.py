@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-from datetime import timedelta
+#from datetime import timedelta
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -46,8 +46,9 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
 
-    #djoser
+    #djoser setup
     'djoser',
+    
 
     #apps
     'user',
