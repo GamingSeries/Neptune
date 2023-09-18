@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 
     #apps
     'user',
+    'dashboard',
     
 ]
 
@@ -158,7 +159,7 @@ DJOSER = {
     # "SEND_ACTIVATION_EMAIL": True,
     # "ACTIVATION_URL": "activate/{uid}/{token}",
     # "SOCIAL_AUTH_TOKEN_STRATEGY": "djoser.social.token.jwt.TokenStrategy",
-    # "SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": ["http://127.0.0.1:3000", "http://127.0.0.1:3000/home", "http://127.0.0.1:3000/login"],
+    #"SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": ["http://127.0.0.1:3000", "http://127.0.0.1:3000/home", "http://127.0.0.1:3000/login"],
     'SERIALIZERS': {
         'user_create': 'user.serializers.UserCreateSerializer',
         'current_user': 'user.serializers.UserSerializer',
