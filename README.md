@@ -169,3 +169,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 - [Django](https://www.djangoproject.com/) - The web framework used
 - [Django REST framework](https://www.django-rest-framework.org/) - REST API framework for Django
 - [PostgreSQL](https://www.postgresql.org/) - Database management system
+- [Python](https://www.python.org) - Python Language
