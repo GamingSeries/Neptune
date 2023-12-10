@@ -135,6 +135,9 @@ social-auth-core==4.4.2
 sqlparse==0.4.4
 typing_extensions==4.6.0
 urllib3==2.0.3
+
+NOTE: some version might not be the same as in requirements.txt since it gets updated 
+
 ```
 
 4. Run migrations
