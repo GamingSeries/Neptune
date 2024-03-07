@@ -49,11 +49,9 @@ INSTALLED_APPS = [
     #djoser setup
     'djoser',
     
-
     #apps
     'user',
     'home',
-    
 ]
 
 MIDDLEWARE = [
