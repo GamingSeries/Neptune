@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 
     #apps
     'user',
-    'dashboard',
+    'home',
     
 ]
 
