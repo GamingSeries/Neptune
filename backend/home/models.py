@@ -16,6 +16,7 @@ class User(models.Model):
     password = models.CharField(max_length=100)
     address = models.CharField(max_length=100)
     phone_number = models.CharField(max_length=10)
+    user_type = models.CharField(max_length=20, choices=USER_TYPE_CHOICES)
     created_at = models.DateTimeField(auto_now_add=True)
 
     #added django password hasher
