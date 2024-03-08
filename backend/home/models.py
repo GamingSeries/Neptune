@@ -10,6 +10,13 @@ class User(models.Model):
     address = models.CharField(max_length=100)
     phone_number = models.CharField(max_length=10)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    #added django password hasher
+    def save(self, *args, **kwargs):
+        # Hash the password before saving
+        self.password = make_password(self.password)
+        super().save(*args, **kwargs)
+    
     def __str__(self):
         return self.username
     
