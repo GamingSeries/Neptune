@@ -3,6 +3,13 @@ from django.contrib.auth.hashers import make_password
 
 # Create your models here.
 class User(models.Model):
+    #select the type of user
+    USER_TYPE_CHOICES = (
+        ('customer', 'Customer'),
+        ('reseller', 'Reseller'),
+        ('admin', 'Admin'),
+    )
+
     user_id = models.IntegerField()
     username = models.CharField(max_length=100)
     email = models.EmailField()
